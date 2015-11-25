@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Observations @ NJC</h1>
+					<h3>From the outside looking in...</h3>
+					<footer>
+						<small>27 October, 2015</small>
+					</footer>
+				</section>
+
+				<section>
+					<h2>Background</h2>
+
+					<aside class="notes">
+						<ul>
+							<li>Acknowledge the traditional land owners - ask for wording</li>
+							<li>Hey i'm ezekiel, pretty sure ive met most of you</li>
+							<li>My background is...</li>
+							<li>I am a Code for Australia fellow which means...</li>
+							<li>This is Jake, i'll let him talk a bit about himself</li>
+						</ul>
+					</aside>
+					<footer>
+						<p class="hashtag">#communityjustice</p>
+					</footer>
+				</section>
+
+				<section>
+					<section>
+						<h2>A bit about today...</h2>
+						<img src="./images/homer.gif" alt="Homer thinking" />
+						<aside class="notes">
+							<ul>
+								<li>I've spent the last 8 weeks, getting to know you</li>
+								<li>So, the aim of this session today is to look at some themes I've noticed in my time here</li>
+								<li>We will go through a short rapid prototyping process</li>
+								<li>Build up a list of possible ideas to prototype and pursue further</li>
+								<li>I can make these slides available online later on if you like and ill send out some tweets with links you might find interesting</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Today is not....</h2>
+						<img src="./images/robber.jpg" alt="Robber" height="300px" />
+						<img src="./images/yoda.jpeg" alt="Yoda" height="300px" />
+						<aside class="notes">
+							<ul>
+								<li>About me running off with a bunch of ideas that i will then try and tackle on my own</li>
+								<li>Me solving all the NJC (or the world's) problems through the knowledge ive amaassed in 2months</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Now... these are pretty cool</h2>
+						<ul>
+							<li>CourtBot - Code for America, Atlanta</li>
+							<li>Promptly - Code for America, </li>
+							<li>The Hive - Harvest Digital Planning</li>
+						</ul>
+						<aside class="notes">
+							<p>Some cool uses of tech in the wild that i've come across in my time here</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>CourtBot</h2>
+						<img src="./images/atl-court.png" alt="Atlanta Municipal Court Queue" height="500px" />
+						<aside class="notes">
+							<ul>
+								<li>Developed by the Atlanta CfA fellows</li>
+								<li>In Atlanta, when you receive a traffic infringement, no matter how minor, the simplest way to resolve it is to go to court and settle the matter. This results in people taking the day off work, only to stand in line waiting to get in.</li>
+								<li>So what courtbot offers, is on the spot information about traffic citations</li>
+								<li>Text your citation number, receive information on how to resolve your infringment</li>
+								<p>CourtBot can provide information on:</p>
+								<ul>
+									<li>If a case can be paid immediately, the app offers a phone number and link to begin payment.</li>
+									<li>If a case requires a court appearance, the app allows users to sign up for reminders, served 24 hours in advance of the case.</li>
+									<li>If a case isn't in the system (usually because it takes two weeks for paper citations to be put into the computer), the app allows users to get information when it becomes available. The app continues checking each day for up to 16 days and sends the case information when found (or an apology if not).</li>
+									<li>Steps to take to challenge the citation</li>
+								</ul>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<img src="./images/courtbot-screen.png" alt="Courtbot" height="600px" />
+					</section>
+
+					<section>
+						<h2>Promptly</h2>
+						<img src="./images/promptly.png" alt="Promptly" />
+						<aside class="notes">
+							<p>Many food stamp recipients in San Francisco discover theyve been disenrolled from the program when it is too late, and they are actually at the grocery store</p>
+							<p>Recipients are then required to re-apply to be put back on the benefits program</p>
+							<p>Promptly was designed to identify recipients that were about to be disenrolled and send them a text message notification before its too late</p>
+							<p>While not strictly for food stamps, promptly provides features for scheduling, monitoring and sending text message notifications for any reason</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>The Hive</h2>
+						<img height="475px" data-src="./images/the-hive.png" alt="The Hive" />
+						<p>By: Harvest Digital Planning</p>
+						<aside class="notes">
+							<p>The Hive is a simple set of drag and drop tools you can configure to quickly produce a website to promote a topic or drive user engagement</p>
+							<p>Some of the sites developed have been for</p>
+							<ul>
+								<li>Events - communicating and promotion</li>
+								<li>Highlighting issues that require community feedback or participation</li>
+							</ul>
+							<p>Out of the box, the hive offers tools like</p>
+							<ul>
+								<li>Support for all types of multimedia</li>
+								<li>Maps for communicating spatial information, or for map based feedback</li>
+								<li>Infographics for communicating concepts and ideas</li>
+								<li>Dashboard for the clients, to allow you to keep track of consultation results and track real time website visits</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Technology meeting my needs</h2>
+						<img width="60%" data-src="./images/vader-toast.jpg" alt="Vader Toast" />
+					</section>
+				</section>
+
+				<section>
+					<h2>Today's workshop</h2>
+					<ul>
+						<li>Pair up</li>
+						<li>Choose one of the possible statements</li>
+						<li>Expand on the issues</li>
+						<li>Come up with a solution that could be prototyped</li>
+					</ul>
+					<aside class="notes">
+						<p>So, lets get workshopping, for this...</p>
+						<p>I'll collate the ideas and we can start a discussion on areas to start rapidly prototyping</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Ice break car</h2>
+					<aside class="notes">
+						<p>Before we dive in, lets just play a little game...</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Statements</h2>
+					<ul>
+						<li>Client attendance and compliance (court orders, appointments, fine payment)</li>
+						<li>Keeping up with what is going on across the NJC (and outside the centre)</li>
+						<li>Embedding the values of a community justice model in criminal courts</li>
+						<li>Engaging with clients before and after their court date</li>
+					</ul>
+
+					<aside class="notes">
+						<p>CHECK WITH JAKE - would communicating the NJC message and model to other courts work better?</p>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>First steps - Interview</h2>
+						<ul>
+							<li>Interview your partner about the statement they chose</li>
+						</ul>
+
+						<aside class="notes">
+							<h3>8mins</h3>
+							<p>CHECK THIS SLIDE WITH JAKE</p>
+						</aside>
+
+					</section>
+
+					<section>
+						<h2>Dig deeper</h2>
+						<ul>
+							<li>Explore the statement from the perspective of all the stakeholders involved</li>
+						</ul>
+						<p>ie. why do their clients need to attend appointments?</p>
+
+						<aside class="notes">
+							<h3>8mins</h3>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Capture findings</h2>
+						<ul>
+							<li>Needs - the things they are trying to do (perhaps use verbs)</li>
+							<li>Insights - new learnings about the statement</li>
+						</ul>
+
+						<aside class="notes">
+							<h3>3mins</h3>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Redefine the statement</h2>
+						<p>[partner / user] needs a way to [their needs] suprisingly / because / but [your insights]</p>
+
+						<aside class="notes">
+							<h3>3mins</h3>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Let's sketch</h2>
+						<ul>
+							<li>Try and sketch 3 radical ways to meet your users needs</li>
+							<li>They dont need to be perfect, just get your ideas out</li>
+						</ul>
+
+						<aside class="notes">
+							<h3>4mins</h3>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Share with your partner</h2>
+						<ul>
+							<li>Share your solutions with your partner</li>
+							<li>Capture their feedback</li>
+						</ul>
+
+						<aside class="notes">
+							<h3>8mins</h3>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Refining</h2>
+						<ul>
+							<li>Reflect on the feedback and generate a new solution</li>
+							<li>Sketch it and add details you think are necessary</li>
+						</ul>
+
+						<aside class="notes">
+							<h3>3mins</h3>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Great job!</h2>
+						<img src="./images/celebration.gif" alt="Celebration" />
+					</section>
+				</section>
+
+				<section>
+					<h2>My time @ the NJC</h2>
+
+					<aside class="notes">
+						<ul>
+							<li>I've been here for ~ the last 2months and it has been great, getting to learn all about community justice and gaining first hand experience in how the centre operates</li>
+							<li>Thanks again for how welcoming, open and accomodating you've all been, its made it a lot easier to settle in</li>
+							<li>Some of the key things I've noticed are how passionate and dedicated everyone here is to the clients, the centre and instigating real change</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>So far, I've spent time with</h2>
+					<ul>
+						<li>Court Registry</li>
+						<li>Information team</li>
+						<li>Crime Prevention</li>
+						<li>PiT team</li>
+						<li>Various members of client services</li>
+					</ul>
+
+					<aside class="notes">
+						<p>I've had the chance to spend time with a quite a few of you both inside and outside the NJC and in various contexts,
+							which has helped me in understanding the type of work the NJC does and how it relates to your key objectives.</p>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Some things you've told me about...</h2>
+
+						<aside class="notes">
+							<p>During this time, these are some things you've told me about</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Current technology</h2>
+						<ul>
+							<li>TrakCare</li>
+							<li>CourtLink</li>
+							<li>Lotus Notes</li>
+							<li>Contrax</li>
+							<li>DOJ Network</li>
+						</ul>
+
+						<aside class="notes">
+							<p>Some of the key pain points are around</p>
+							<ul>
+								<li>Clunky and slow tools to use</li>
+								<li>Lack of integration of the systems + the need to rekey information</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Client attendance and compliance</h2>
+						<ul>
+							<li>Appointments</li>
+							<li>Court dates</li>
+							<li>Possible misinformation from other services</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Motivating and assisting clients to attend appointments</li>
+								<li>Keeping up to date with clients progress between appointments</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Communication</h2>
+						<ul>
+							<li>Keeping up with what is happening across the centre</li>
+							<li>Educating others about community justice</li>
+							<li>Email, email, email</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Some observations...</h2>
+						<aside class="notes">
+							<p>Here are some things that i've observed in my time here that may or may not necessarily be the case</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Informal knowledge sharing</h2>
+						<ul>
+							<li>Lots of verbal information sharing</li>
+							<li>Are we missing opportunities for collaboration?</li>
+						</ul>
+
+						<aside class="notes">
+							<p>A lot of knowledge seems to be shared through conversation, that's great but with staff constantly coming and going we might be missing some opportunities for collaboration</p>
+							<p>Can we improve the ways we stay informed of:</p>
+							<ul>
+								<li>Other community services</li>
+								<li>Other courts at all levels</li>
+								<li>Local and state government</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Measuring impact of projects and ideas</h2>
+						<ul>
+							<li>Sharing what did and didn't work</li>
+							<li>Assessing the impact</li>
+						</ul>
+
+						<aside class="notes">
+							<p>There seem to be a lot of projects, ideas and little innovations happening around the centre, but I havent seen too much focus on sharing what has and hasnt worked,
+								oustide of staff meetings or centre wide emails.</p>
+							<p>How do we refine what has been tried and worked, how do improve something that might not have worked?</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Sharing our successes</h2>
+						<aside class="notes">
+							<p>Futhermore, there seem to be a lot of success stories, whether that be successful outcomes for clients or work done outside the centre, from what I have seen
+							these stories help reinforce the importance of the NJC and a community based model</p>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>So....now what?</h2>
+					<ul>
+						<li>We'll  collate all the responses online and send them out to all staff</li>
+						<li>Let's dig in a start trialing / prototyping some possible solutions</li>
+						<li>Would we like a follow up session?</li>
+					</ul>
+
+					<aside class="notes">
+						<p>We'll collate the responses and send them out in a document for people to comment on</p>
+						<p>Let's start testing, trialing and prototyping some possible solutions</p>
+						<p>Would a session a month from now be useful? Perhaps to share progress and update on what has been started?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Coming up</h2>
+					<p>Civic lab w/ the City of Yarra - November</p>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<ul>
+						<li><a href="https://github.com/hakimel/reveal.js">Presentation made with reveal.js</a> - try it online for free</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

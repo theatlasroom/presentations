@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!--<link rel="stylesheet" href="css/theme/simple.css" id="theme">-->
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style media="screen">
+			html body .reveal div.speaker-notes.visible {max-height:50%;}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Smarter public service</h1>
+					<h3>Working with government</h3>
+					<footer>
+						<small>17 November, 2015</small>
+					</footer>
+				</section>
+
+				<!--<section>
+					<h2>Overview</h2>
+					<ul>
+						<li>Who am i / What is code</li>
+						<li>Why do we do it</li>
+						<li>Some cool ways others are working with gov</li>
+						<li>How am i doing it @ the NJC</li>
+						<ul>
+							<li>I've spent the last 10 weeks researching @ the NJC</li>
+							<li>Some things I noticed - high level</li>
+							<li>What they've told me - high level, no specifics</li>
+							<li>How? - prototyping ideas, building community around them</li>
+							<li>Possibilites after prototyping - flesh out some ideas, farm some out to communit</li>
+						</ul>
+					</ul>
+				</section>-->
+
+				<section>
+					<h2>Background</h2>
+
+					<aside class="notes">
+						<ul>
+							<li>Hey i'm ezekiel</li>
+							<li>My background is...</li>
+							<li>Currently I am a Code for Australia fellow, this means...</li>
+							<li>Code for Aus is part of a global network of partners that share knowledge, resources and solutions to help build an ecosystem of civic technology</li>
+						</ul>
+					</aside>
+					<footer>
+						<p class="hashtag">#communityjustice</p>
+					</footer>
+				</section>
+
+				<section>
+					<section>
+						<h2>Why work with government?</h2>
+						<aside class="notes">
+							<ul>
+								<li>Every year there is some truly amazing progress being made in digital technology, but typically government agencies tend to be slow moving, slightly backwards organisations that try to tackle all the big problems at once.</li>
+								<li>This can leave government out of touch with the real needs of the public and the communities they work with</li>
+								<li>A quick google search for government IT fails and you can come across some major examples</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>UK Electronic Health records project</h2>
+						<ul>
+							<li>9 year project</li>
+							<li>Cost (2013 estimate): $16 Billion</li>
+							<li>Reasons for failure: too large, too ambitious, too many changing requirements</li>
+						</ul>
+						<br/>
+						<br/>
+						<footer>
+							<small>Source: <a href="https://curiousmatic.com/colossal-failed-government-information-tech-projects-failed/">Colossal failed government IT projects</a></small>
+						</footer>
+
+						<aside class="notes">
+							<p>In 2011, U.K. government officials scrapped a massive 9-year, $16 billion project to create a unified electronic health records system for British citizens.</p>
+							<p>Reasons for failure: too large, too ambitious, too many changing requirements</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>LMBR - Dept. Education (NSW)</h2>
+						<ul>
+							<li>8 years in the making</li>
+							<li>$531 million pilot Learning Management and Business Reform</li>
+							<li>Thousands of TAFE students left unable to enrol because of system glitches</li>
+						</ul>
+						<br />
+						<br />
+						<footer>
+							<small>Source: <a href="http://www.smh.com.au/national/education/nsw-education-minister-adrian-piccoli-defends-complete-disaster-it-system-20150830-gjbchm.html">Sydney Morning Herald</a>, <a href="http://www.itnews.com.au/news/cost-of-nsw-educations-lmbr-to-soar-past-573m-398850">ITNews</a></small>
+						</footer>
+						<aside class="notes">
+							<ul>
+								<li>Started in 2005 and designed to manage human resources, finance, student information and payrolls</li>
+								<li>$400 Million was budgeted, the rollout has not been completed and its already sitting well over $500 million with some estimates putting it closer to $1 billion for completion</li>
+								<li>Its been estimated the same money could have gone to build 20 new schools</li>
+								<li>The NSW Auditors-general cited diverse business requirements and complex commercial arrangements as key factors and have recommend longer projects be capped at 3 year and anything longer be broken down to reviewable chunks</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>So what HAS worked?</h2>
+						<aside class="notes">
+							<p>So what are some things that have worked you ask?</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>CourtBot</h2>
+						<img src="./images/atl-court.png" alt="Atlanta Municipal Court Queue" height="500px" />
+						<aside class="notes">
+							<ul>
+								<li>Developed by the Atlanta CfA fellows</li>
+								<li>In Atlanta, when you receive a traffic infringement, no matter how minor, the simplest way to resolve it is to go to court and settle the matter. This results in people taking the day off work, only to stand in line waiting to get in.</li>
+								<li>So what courtbot offers, is on the spot information about traffic citations</li>
+								<li>Text your citation number, receive information on how to resolve your infringment</li>
+								<p>CourtBot can provide information on:</p>
+								<ul>
+									<li>If a case can be paid immediately, the app offers a phone number and link to begin payment.</li>
+									<li>If a case requires a court appearance, the app allows users to sign up for reminders, served 24 hours in advance of the case.</li>
+									<li>If a case isn't in the system (usually because it takes two weeks for paper citations to be put into the computer), the app allows users to get information when it becomes available. The app continues checking each day for up to 16 days and sends the case information when found (or an apology if not).</li>
+									<li>Steps to take to challenge the citation</li>
+								</ul>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<img src="./images/courtbot-screen.png" alt="Courtbot" height="600px" />
+					</section>
+
+					<!--<section>
+						<h2>Promptly</h2>
+						<img src="./images/promptly.png" alt="Promptly" />
+						<aside class="notes">
+							<p>Many food stamp recipients in San Francisco discover theyve been disenrolled from the program when it is too late, and they are actually at the grocery store</p>
+							<p>Recipients are then required to re-apply to be put back on the benefits program</p>
+							<p>Promptly was designed to identify recipients that were about to be disenrolled and send them a text message notification before its too late</p>
+							<p>While not strictly for food stamps, promptly provides features for scheduling, monitoring and sending text message notifications for any reason</p>
+						</aside>
+					</section>-->
+
+					<!--<section>
+						<h2>School Finder</h2>
+						<img height="475px" data-src="./images/the-hive.png" alt="The Hive" />
+						<p>By: Code For Australia fellow - Peter Welte</p>
+						<ul>
+							<li>Looking for the right school can be confusing / time consuming</li>
+						</ul>
+						<aside class="notes">
+							<p>too much time being spent by parents looking for approapriate school / schools providing info to parents</p>
+						</aside>
+					</section>-->
+
+					<section>
+						<h2>Technology meeting my needs</h2>
+						<img width="60%" data-src="./images/vader-toast.jpg" alt="Vader Toast" />
+					</section>
+				</section>
+
+				<section>
+					<h2>So basically... you're saying ...</h2>
+					<aside class="notes">
+						<p>Being smart with technology is not just about the latest greatest whizz bang solution, sometimes the smartest tech solutions can be just a small bit of technology applied in the right context</p>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>That's cool and all m8, but what are you doing?</h2>
+					</section>
+
+					<section>
+						<h2>Neighbourhood Justice Centre</h2>
+						<blockquote cite="http://www.neighbourhoodjustice.vic.gov.au/home/about+us/">
+							Doing justice locally and finding lasting solutions that strengthen the City of Yarra
+						</blockquote>
+						<ul>
+							<li>Prevent and reduce criminal and other harmful behaviour in the Yarra community</li>
+							<li>Increase confidence in, and access to the justice system for the Yarra communities</li>
+							<li>Strengthen the Neighbourhood Justice Centre Community justice model and facilitate the transfer of its practices to other courts and communities</li>
+							<li>Twitter: @NJC_Collingwood</li>
+							<li>More info: www.neighbourhoodjustice.vic.gov.au</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>So i'm working with the Neighbourhood Justice Centre in Collingwood,</li>
+								<li>The justice centre is australias only community court</li>
+								<li>The centre focuses on utilising wholistic, therapeutic and restorative approaches to justice.</li>
+								<li>Where possible, the centre looks to seek community based alternatives to criminal prosecution, and are committed to helping address the underlying issues of crime.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>But what does this all translate to?</h2>
+						<aside class="notes">
+							<p>Just this week a series of articles were published by the Australian Institute of Criminology with some findings </p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Court order breaches</h2>
+						<h3>High risk</h3>
+						<ul>
+							<li>State average: 59.9% breached</li>
+							<li>NJC: 23.1% breached</li>
+						</ul>
+						<h3>Medium risk</h3>
+						<ul>
+							<li>State average: 35.3% breached</li>
+							<li>NJC: 13.6% breached</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Recidivism (repeat offending)</h3>
+						<p>25% lower than comparative magistrates courts</p>
+						<aside class="notes">
+							<p>These articles have been peer reviewed and have been subject to Ministerial sign off</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>So what are we doing with NJC</h2>
+						<ul>
+							<li>Research</li>
+							<li>Prototype</li>
+							<li>Refine</li>
+							<li>Connecting</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>I am engaging with the NJC in a process of research driven prototyping</li>
+								<li>I have been based there for ~3months so far focusing on research, this has involved extensive shadowing of staff, sitting in on interactions with clients and other providers and mapping processes</li>
+								<li>Some of the common themes that have come from my research are issues around interactions with clients of the centre, communicating and sharing knowledge, ideas and new findings, </li>
+								<li>The next steps have involved engaging staff to drive some possible prototypes we can attack based on my research findings as well as mixing in some of my ideas</li>
+								<li>We will spend a couple of months trialing, testing and reviewing the prototypes to see which have worked, what hasnt worked and what could be improved</li>
+								<li>Following that, we will focus on the prototypes that show the most promise for the NJC and spend a few more months refining them</li>
+								<li>As well as the above, we are also helping to connect the NJC with relevant skilled businesses and individuals in their locality, with the skills and passion to help the NJC continue its work</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>That's all folks</h1>
+					<ul>
+						<li>Follow @codeforaus</li>
+						<li>Follow me @theatlasroom</li>
+						<li>Get involved in our Civic labs</li>
+						<li><a href="https://github.com/hakimel/reveal.js">Presentation made with reveal.js</a> - try it online for free</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				showNotes: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
