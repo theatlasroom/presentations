@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Prototyping - December 9, 2015</title>
+
+		<meta name="description" content="Tools and some of my process for prototyping">
+		<meta name="author" content="Ezekiel Kigbo @theatlasroom">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Paper to pixels</h1>
+					<p>Brief overview of some tools and how I use them</p>
+					<footer>
+						<small><span class="fa fa-twitter"></span>&nbsp;@theatlasroom</small><br/>
+						<small>9 December, 2015</small>
+					</footer>
+
+					<aside class="notes">
+						IMPORTANT LINKS: https://medium.com/user-experience-design-1/the-best-prototyping-tools-8d7dc5c8ee27#.u8pnkeaj8
+					</aside>
+				</section>
+
+        <section>
+          <h1>Overview</h1>
+					<ul>
+						<li>Me</li>
+						<ul>
+							<li>Prototyping at different levels</li>
+							<li>Real world example: online court documents</li>
+							<li>Final words</li>
+						</ul>
+						<li>Tools i'll touch on..</li>
+						<ul>
+							<li>Paper, Moqups, Sketch, Invision, LESS, SASS, Bootstrap, Foundation, JS and Backend frameworks</li>
+						</ul>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>I'll just briefly go over a range of tools I use at different stages of a prototype</li>
+							<li>I'll talk about this in a bit of linear way, but in reality these are just stages that are interchangeable and I often move between different stages in the course of a project</li>
+							<li>Then after that, i'll also talk about a real world example and the tools I used along the way</li>
+							<li>If i mention a tool thats unfamilliar stop me and I can give a brief rundown</li>
+						</ul>
+					</aside>
+        </section>
+
+				<section>
+					<section>
+						<h2>I am</h2>
+						<ul>
+							<li>Code for Australia Fellow</li>
+							<li>Full Stack Developer</li>
+							<li>Sound Art Tinkerer</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>I'm not really a designer...</h2>
+						<aside class="notes">
+							<ul>
+								<li>So the, big reveal for today is.... i'm actually not a designer per-se, but I know enough to be discerning</li>
+								<li>If i was a car i'd probably be something like a ford, i don't have all the bells and whistles, but I can get the job done</li>
+								<li>So for me, paper prototyping and drawing can actually be a bit painful - im just not very good at articulating what i need to in paper</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Pixels are my friend</h2>
+						<!-- superhero pixels image -->
+						<aside class="notes">
+							<ul>
+								<li>I'm more comfortable working in pixels</li>
+								<li>I like to get digital early, for me I feel i can be a bit more creative and exploratory</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Getting started</h2>
+					</section>
+
+					<section>
+						<h2>What are we testing?</h2>
+						<aside class="notes">
+							<ul>
+								<li>Probably the most important step in prototyping</li>
+								<li>The goal with a prototype is usually to test a concept, or an idea and see if it is sound</li>
+								<li>The goal is NOT to design the perfect solution</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Paper</h2>
+						<blockquote cite="http://">
+							<p>Is this paper? Whoa, super throwback</p>
+							<small><em>Roscoe Santangelo</em></small>
+						</blockquote>
+						<aside class="notes">
+							<ul>
+								<li>I mostly start with paper if i don't have an inclination in my mind of how I would like the UI to look</li>
+								<li>Not just when im prototyping, but in general a little bit of thought put into your ui up front will save you a lot of time and decisions in implementation</li>
+								<li>For me, this tool is most effective to map out processes, or simply translate the solution into some kind of baseline to start from</li>
+							</ul>
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>UI</h2>
+						<aside class="notes">
+							<ul>
+								<li>Once i have enough of a mental model of the solution, I start putting it togethor and exploring options</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Moqups</h2>
+						<img src="./images/screen-moqups.png" height="500px" />
+						<aside class="notes">
+							<ul>
+								<li>Wireframing + interaction design</li>
+								<li>Focused on nailing down the layout and basic flow of the interface - forget about the particulars</li>
+								<li>Drag and drop interface with all your common web UI components - collaboration friendly</li>
+								<li>User testing / validation</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Sketch</h2>
+						<img src="./images/screen-sketch.png" height="500px" />
+						<aside class="notes">
+							<ul>
+								<li>Vector based digital design tool, thats pretty small and quick to use</li>
+								<li>I always found photoshop a bit too complex for web mockups, so for me sketch provides a nice smaller set of tools as well as some cool features</li>
+								<li>Exporting assets for multiple sizes + pixel density</li>
+								<li>Great for designing for multiple screen sizes</li>
+								<li>I mostly use sketch when im working on higher fidelity prototypes or exploring how i might visualise something</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Invision</h2>
+						<img src="./images/screen-invision.gif" height="500px" />
+						<aside class="notes">
+							<ul>
+								<li>Invision is another great tool at this point</li>
+								<li>Its great for collaboration, sharing your designs and also testing with clients</li>
+								<li>You can import images and create clickable walk throughs for your site or application</li>
+								<li>Share them with other people</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Jumping to the browser</h2>
+						<aside class="notes">
+							<ul>
+								<li>Once I have the basis of the UX and general UI, i might jump to something in the browser </li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>UI Frameworks are your friend</h2>
+						<ul>
+							<li>Bootstrap, Foundation</li>
+							<li>Responsive out of the box</li>
+							<li>Mobile first</li>
+							<li>Comprehensive set of defaults to get you going</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Provide you with a good set of defaults off the bat, allow you to focus on your solution not implemetation details</li>
+								<li>Responsive out of the box, so you can easily create multi-screen layouts</li>
+								<li>Basic things like responsive grids, navigation, nicer looking forms and common ui components like accordions, breadcrumbs </li>
+								<li>When you want to start gett</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Foundation</h2>
+						<img src="./images/screen-foundation.png" height="500px" />
+					</section>
+
+					<section>
+						<h2>Bootstrap</h2>
+						<img src="./images/screen-bootstrap.png" height="500px" />
+					</section>
+
+					<section>
+						<h2>Customising: LESS + SASS</h2>
+						<aside class="notes">
+							<ul>
+								<li>Preprocessors that add additionaly functionality to CSS allowing you create more maintable and re-useable code</li>
+								<li>Simple things like the ability to define your colours in variables and quickly test out different looks are really useful when you're prototyping</li>
+								<li>Bootstrap is ported to both SASS and LESS, while AFAIK foundation is still only in SASS</li>
+								<li>This allows you to easily override the defaults of these UI frameworks and build around them for your custom needs</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Getting dynamic</h2>
+						<aside class="notes">
+							<ul>
+								<li>So i've got something in the browser, it looks and feels close enough to what I want to test and I want to give a bit more interactivity</li>
+								<li>You might want to start piping in real world data or simply have something thats on-line and real enough for users to test on their devices</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Frontend</h2>
+						<ul>
+							<li>jQuery</li>
+							<li>BackboneJS</li>
+							<li>AngularJS</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>jQuery great for splashes of interactivity, smooths over inconsistencies between browsers and is great for simple UIs that just need a little bit more interactivity than static content</li>
+								<li>Backbone and Angular provide alot more structure to your data and simplify like working with restful APIs</li>
+								<li>I won't dwell on these because thats a conversation in its own right, but needless to say they are all good tools, that provide various levels of structure, allowing you to make more 'dynamic' prototypes and leverage plugins so you dont have to re-invent the wheel</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Backend</h2>
+						<ul>
+							<li>ExpressJS - NodeJS</li>
+							<li>Lumen, Slim - php</li>
+							<li>Flask - Python</li>
+							<li>Sinatra - Ruby</li>
+						</ul>
+					</section>
+
+					<aside class="notes">
+						<ul>
+							<li>When I need just a bit more functionality, such as storing data, interacting with APIs or testing out interfaces with other systems, backend microframeworks give enough flexibility and speed in set up to get going.</li>
+							<li>Functionally, theyre all pretty similar</li>
+							<li>Provide some simple structure and boilerplate for things like:</li>
+							<ul>
+								<li>Setting up your project</li>
+								<li>Restful APIs</li>
+								<li>Structuring your backend code</li>
+								<li>Database access, authentication and html templating</li>
+							</ul>
+							<li>Usually based around middleware, which allows you to just pull in the components you need and tailor your solution</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Putting it all togethor</h2>
+						<p>Gettin' reel</p>
+						<img src="./images/reel-to-reel.jpg" height="500px" />
+					</section>
+
+					<section>
+						<h2>Hey, how can we provide clients with secure, up to date access to their court documents?</h2>
+
+						<aside class="notes">
+							<ul>
+								<li>This could be a large project in itself, so we decided to focus in a bit more on one use case</li>
+								<li>We focused on clients with Personal safety / Family violence intervention orders</li>
+								<li>Why? Primarily so they dont need to re-articulate the terms of their order / have it on hand when they need</li>
+								<li>We needed to boil down the process to something simple and digestable, so we could quickly validate the idea not the specifics</li>
+								<li>We felt like it needed to model the users experience, not just show the interfaces</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>We started in paper....and I survived</h2>
+						<p>45mins + post it notes and some paper</p>
+						<img src="./images/fvio-paper-1.jpg" height="375px" />
+					</section>
+
+					<section>
+						<h2>Next</h2>
+						<aside class="notes">
+							<ul>
+								<li>I created a basic responsive online version</li>
+								<li>I jumped straight into code w/ bootstrap + express + less + angular and deployed it to heroku.... for me, this is easy enough to get up and running and can expand on it later</li>
+								<li>It consisted of a fake login page and a </li>
+								<li>Added the relevant metadata favicons so that we could save the bookmark and have it appear like an app</li>
+								<li>I was also provided with a mock intervention order which i populated the viewer with and just used an angular pdf viewer plugin</li>
+								<li>The only trickery was the username field, that carries over to the next page or defaults to guest... simple right</li>
+								<li>Its ugly, but functional enough to test</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<!-- Show the interface -->
+						<img src="./images/fvio-homescreen.jpg" height="500px" />
+					</section>
+
+					<section>
+						<!-- Show the interface -->
+						<img src="./images/fvio-login.jpg" height="500px" />
+					</section>
+
+					<section>
+						<!-- Show the interface -->
+						<img src="./images/fvio-viewer.jpg" height="500px" />
+					</section>
+
+					<section>
+						<h2>Then what happened</h2>
+						<!-- explosion image -->
+						<aside class="notes">
+							<ul>
+								<li>We wanted to check that this was the idea the director had in mind and also get her a bit excited about it, if she was onboard it'd make it easier to get other staff on board later</li>
+								<li>So we decided to just hijack her phone and prepare the bookmark on her homescreen</li>
+								<li>We asked to borrow her phone, loaded it up to ensure the docs were cached and then pulled her aside</li>
+								<li>A brief explanation and a few minutes later she was off showing and telling everyone she could get a minute with</li>
+								<li>This happened 15mins before the centre was about to be presented with an innovation award from DPC (dept premier and cabinet)</li>
+								<li>So some of the people that were shown included members of DPC and state ministers that were also in attendance</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Yay - now more testing</h2>
+						<img src="./images/celebration.gif" height="500px" />
+						<aside class="notes">
+							<ul>
+								<li>We decided the court registry would be a keypoint to start discussion with clients, they'll be surveying clients to see if having something like this as an alternative would be of benefit</li>
+								<li>Explaining the concept to non-technical staff is now a cinch, because we can simply show them</li>
+								<li>For clients this is also the case</li>
+								<li>We can now start to drill down into the user interfaces (ill probably start with some moqups) and look at how the viewer could look and how we can incorporate the kinds of tasks clients want</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>On prototyping...</h2>
+						<ul>
+							<li>Focus on what you want to test</li>
+							<li>Think of the lowest level fidelity you need to test your concept</li>
+							<li>Make it quick and keep it dirty</li>
+						</ul>
+					</section>
+					<section>
+						<h2>On Tooling....Beware | Be aware</h2>
+						<ul>
+							<li>Research some good sources for your interests keep tabs on the tools that are out there</li>
+							<li>Get connected and share your experiences with others - learn about the tools others are using</li>
+							<li>Don't get too attached - be flexible to a degree</li>
+							<ul>
+								<li>Any flash developers out there?....</li>
+							</ul>
+							<li>Really just focus on what will add value to your work and help you move quickly</li>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>That's all folks</h1>
+					<h2>@theatlasroom</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
