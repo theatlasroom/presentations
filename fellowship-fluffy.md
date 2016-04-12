@@ -5,7 +5,7 @@
 - I'm passionate about technology, problem solving and excited about how governments can work better for their citizens
 
 * Fellows are tasked with giving government agencies an opportunity to prototype all the wild ideas theyve had
-* We build the ideas that show promise
+* We help ideate, test and build the ideas that show promise for both citizens and government
 * And hopeully, along the way we help government develop the skills and form the partnerships they need to ensure they can continue the fantastic work
 
 ## Why I fellow
@@ -25,7 +25,8 @@ My fellowship has consisted of a series of research and prototyping activities, 
 * Understand who makes up the NJC's community, how, why and when they interact with the NJC
 * Capture possible opportunities and ideas that could form the basis for prototypes
 * Make some initial prototypes to address issues found
-* Begin to refine the prototypes that are proving most beneficial and deliverable within the year
+
+And we are now refining some of the prototypes that have been proving to be the most beneficial and preparing to get them out in the wild.
 
 I've enjoyed the opportunity the fellowship has given me to focus my skills, energy and time into working with staff from a diverse range of backgrounds, different levels of experiences and expectations of technology and challenges that are completely outside the usual domains of my knowledge.
 
