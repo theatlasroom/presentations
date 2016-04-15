@@ -1,16 +1,27 @@
-# Fellowship
+# Prototyping public services
+## Key points
+* Quickly get things into peoples hands - efv
+* A lean approach to prototyping (reword) - online pleas
+
+## Intro
+Hey today, im here to talk a bit about prototyping, innovation, lean methodology and all those other interesting topics.....within government
+
+## What is C4A
+* who / what / why
+* gov it fail
+* our programs
+
+How + some of the tools ive used??
+
+
 ## Fellowship + me
 - Hi, I'm a full stack developer, semi-decent designer and civic technology enthusiast
   * something about user research
 - I'm passionate about technology, problem solving and excited about how governments can work better for their citizens
 
 * Fellows are tasked with giving government agencies an opportunity to prototype all the wild ideas theyve had
-* We help ideate, test and build the ideas that show promise and have the ability to help both citizens and government
-* Along the way we also try and help government develop the skills and form the partnerships they need to ensure they can continue the fantastic work
-
-A typical fellowship starts with a period of research within your government department, this gives the fellows an opportunity to understand the context they will be working in, it forces the fellows to dig deep into the department, observe the day to day work staff conduct, asking questions, interviewing internal and external stakeholders and identifying areas where a small bit of technology could be the catalyst for change.
-
-The research forms the basis of the ideation and prototyping stages, where the fellows quickly develop low cost prototypes and start to get them in front of internal and external stakeholders to better understand, develop and re-evaluate the problems they are trying to address. Along the way, ideas that show the most promise and benefit are identified for further development.
+* We help ideate, test and build the ideas that show promise for both citizens and government
+* And hopeully, along the way we help government develop the skills and form the partnerships they need to ensure they can continue the fantastic work
 
 ## Why I fellow
 
@@ -25,15 +36,15 @@ Some of the key services the NJC provides include, functioning as a multi-jurisd
 The City of Yarra is a small, but dense part of melbourne packed with businesses, community services and a growing tech community. The population is made up of a mix of people from a vast array of cultural, economic and social backgrounds all of which place the NJC perfectly as a centre for innovation within the Justice system, allowing them to explore new solutions to complex problems such as providing online access to Family violence intervention orders.
 
 ## So far
-My fellowship has consisted of a series of research, ideation and prototyping activities with not just NJC staff but also the wider community, giving me an opportunity to:
+My fellowship has consisted of a series of research and prototyping activities, giving me an opportunity:
 
-* Gain a deeper understanding of who the NJC is, what they do and the space they work in
+* Gain a deep understanding of who the NJC is, what they do and the space they work in
 * Understand who makes up the NJC's community, how, why and when they interact with the NJC
 * Capture possible opportunities and ideas that could form the basis for prototypes
-* Quickly develop prototypes to allow the NJC staff and I to start to address issues that we have identified
+* Make some initial prototypes to address issues found
 
-We are now at the stage of refining some of the prototypes that have been proving to be the most beneficial and preparing to get them out in the wild.
+And we are now refining some of the prototypes that have been proving to be the most beneficial and preparing to get them out in the wild.
 
-I've enjoyed the opportunity the fellowship has given me to focus my skills, energy and time into working with staff from a diverse range of backgrounds, different levels of experiences and expectations of technology, along with complex challenges that are completely outside the usual domains of my knowledge.
+I've enjoyed the opportunity the fellowship has given me to focus my skills, energy and time into working with staff from a diverse range of backgrounds, different levels of experiences and expectations of technology and challenges that are completely outside the usual domains of my knowledge.
 
 The fellowship has given me the chance to work not just across the whole centre, initiating conversations, applying my skills, providing technical advice, but also the opportunity to get involved in the wider tech, social and government communities around.
