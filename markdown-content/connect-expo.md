@@ -1,13 +1,18 @@
 ## Hi
 ![hi]()
 ## Note:
-Hey today, im here to talk a bit about prototyping, innovation, lean-ish practice and all those other interesting topics, and how they can be applied..... within government and the public sector.
+Hey today, im here to talk a bit about prototyping, innovation, lean-ish practice and all those other interesting topics, and how they can be applied....
 
-You might think I sound crazy, and you might be thinking these 2 concepts are mutually exclusive, but there are definately ways out there to get the ball rolling and I want to talk a little bit about my experiences over the last 9months as a Code for Australia Fellow.
+
+## In government
+![Obama ok](./images/obama-ok.gif)
+## Note:
+You might think I sound crazy, and you might be thinking these 2 concepts are mutually exclusive, but there are definately ways to get ideas moving in the public sector and I want to talk a little bit about my experiences over the last 9months as a Code for Australia Fellow.
 
 
 ## Me
 ![me]()
+* Code for Australia Fellow
 * Full stack developer
 * I do designy-ish things
 * I love football
@@ -19,13 +24,24 @@ I have been working as a web developer over the past ~7 years with a majority of
 
 I love programming, I love getting finding solutions and love getting ideas off the ground.
 
+I am currently a Code for Australia fellow.
+
 
 
 ## Code for Australia
+We are a network of skilled citizens that are helping transform government
 
+## Code for Australia
+Government can work together with the public and private sector to develop a more responsive government and create meaningful change through technology.
 
-## Note:
-Code is...
+##
+![Code for all](./images/code-for-all.png)
+
+##
+![Gov IT fail](./images/gov-it-fail.png)
+
+##
+![Bridge the gap](./images/bridge-the-gap.png)
 
 
 ## Fellowship?
@@ -121,10 +137,10 @@ Early on in my fellowship, one of the problems that kept emerging was the lack o
 * The centre was packed with various staff from different levels of government and not only the Department of Justice
 * So some of the people that were shown included members of DPC and state ministers that were also in attendance
 * While this prototype ended there, it provided an opportunity for us to:
-  - Connect with non-technical staff around a possible solution, particularly the court registry who would be required to make the most changes to their work
+  - Connect with non-technical staff around a possible solution, particularly the court registry who would be required to make the most changes to their work, and figure out how we could integrate it into their workflow
   - Connect with clients and start to learn about the usefulness of such a solution
   - Think about the external complexities
-* The NJC will be looking to implement some of the work into future iterations of their the family violence online service
+* The NJC will be implementing the ideas into future iterations of their the family violence online service
 
 
 ## Some things I've learnt
@@ -134,7 +150,7 @@ Early on in my fellowship, one of the problems that kept emerging was the lack o
 * Find your internal champions
 
 ## Note:
-So here are some general things i've learnt about during my time as a fellow.
+So in summary, these are some general things i've learnt about or had reinforced to me during my time as a fellow, working on problems like the ones I have just gone over.
 
 Make sure you understand what you want to be testing, the goal with a prototype is usually to test a concept, or an idea and make sure that it is sound, or tease out some of the complexities before you commit to a solution. The goal is definately not to design the most perfect solution.
 
@@ -147,3 +163,10 @@ Most importantly, you need to find your internal champions, these are the people
 
 
 ## Tools i've found useful
+
+
+
+## One more thing...
+We are hiring!
+![Hiring](./images/hiring.gif)
+Info on [codeforaustralia.org](http://codeforaustralia.org)
