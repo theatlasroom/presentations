@@ -1,17 +1,10 @@
-## Hi
-![hi]()
-## Note:
-Hey today, im here to talk a bit about prototyping, innovation, lean-ish practice and all those other interesting topics, and how they can be applied....
-
-
 ## In government
-![Obama ok](./images/obama-ok.gif)
+![Obama running](./images/obama-running.gif)
 ## Note:
 You might think I sound crazy, and you might be thinking these 2 concepts are mutually exclusive, but there are definately ways to get ideas moving in the public sector and I want to talk a little bit about my experiences over the last 9months as a Code for Australia Fellow.
 
 
 ## Me
-![me]()
 * Code for Australia Fellow
 * Full stack developer
 * I do designy-ish things
@@ -22,7 +15,7 @@ I am a full stack developer, a bit of a designer, if i was to compare my design 
 
 I have been working as a web developer over the past ~7 years with a majority of that time spent working at universities, ive also had the opportunity to freelance for both established small businesses and startups.
 
-I love programming, I love getting finding solutions and love getting ideas off the ground.
+I love programming, I love finding solutions to problems and getting ideas off the ground.
 
 I am currently a Code for Australia fellow.
 
@@ -30,23 +23,32 @@ I am currently a Code for Australia fellow.
 
 ## Code for Australia
 We are a network of skilled citizens that are helping transform government
+## Note:
+We are a network of skilled citizens, designers, developers, community organisers, whoever, that are helping transform government
 
 ## Code for Australia
 Government can work together with the public and private sector to develop a more responsive government and create meaningful change through technology.
 
-##
+
 ![Code for all](./images/code-for-all.png)
+## Note:
+We are part of a global network of like-minded organisations, sharing our ideas, stories and open source code to help governments around the world move towards the same goals.
 
-##
+
 ![Gov IT fail](./images/gov-it-fail.png)
+## Note:
+Why do we do this?
 
-##
+
 ![Bridge the gap](./images/bridge-the-gap.png)
+This is the space we work in
 
 
 ## Fellowship?
 ![Lego Fellowship](./images/lego-fellowship.jpg)
 ## Note:
+One of the ways we try and achieve this, is through our fellowship program. Fellows are sent out into government departments for a fixed period of public service.
+
 Fellows are tasked with giving government agencies an opportunity to prototype all the wild ideas theyve had, we help ideate, test and build the ideas that show promise and have the ability to help both citizens and government. Along the way we also try and help government develop the skills and form the partnerships they need to ensure they can continue the fantastic work
 
 A typical fellowship starts with a period of research within your government department, this gives the fellows an opportunity to understand the context they will be working in, it forces the fellows to dig deep into the department, observe the day to day work staff conduct, asking questions, interviewing internal and external stakeholders and identifying areas where a small bit of technology could be the catalyst for change.
@@ -143,11 +145,90 @@ Early on in my fellowship, one of the problems that kept emerging was the lack o
 * The NJC will be implementing the ideas into future iterations of their the family violence online service
 
 
+
+## Problem
+* How can we reduce the time clients spend at court?
+* How can we prepare courts to deliver transactional services digitally?
+
+## Note:
+Another problem, not just at the NJC but across all magistrate courts is the time spent by clients waiting for their case to be heard. This can be due to a range of issues, including:
+
+- Too many cases coming through the court
+- Complex cases taking longer than expected
+- The lack of digitisation of court services
+
+This waiting and uncertainty about the state of your matter can cause unwarranted stress and strain on citizens who more than likely, already are in a very stressful situation. How can we better utilize the time and resources of the courts to focus on the most complex of issues, while still giving all citizens a fair go.
+
+Increasingly, citizens are expecting and demanding to be able to conduct transactional government activities online, thinking of paying a fine, applying for a permit. Why? because of the convenience, digital offers an opportunity for citizens to connect with the public service from, wherever and whenever they CHOOSE to.
+
+
+
+<iframe src="https://popapp.in/w/projects/56a959f74eca693f259da0c2/embedded" width="420" height="908" frameborder="0" allowTransparency="true"></iframe>
+
+
+## Not bad hey?
+![obama not bad](./images/obama-not-bad.gif)
+* ~30mins of sketching, listening to music and mapping out the process
+* ~5mins to take a photo of all the screens and link them up into a Fellow
+* lots of redrawing because my handwriting is super messy
+
+
+## And then..
+## Note:
+This prototype was co-designed by myself and another NJC staff member, Gavin Hince and it took us roughly 35mins to draw, photograph (on our phones), link togethor and test.
+
+In short, the solution provides an option for citizens, convicted of a minor offence such as traffic offences and unpaid fines, to accept a guilty plea online, it might seem strange for someone to accept a charge but for some citizens, the idea of taking a day off work to attend court for an offence they are not planning to contest can cost them more than the price of the offence.
+
+The plea is sent to the relevant court registry, who can provide it to the magistrate during the quieter times of the day. The magistrate can review the case and if they feel like they have sufficient information, finalise a decision, otherwise they can issue an adjournment of the case.
+
+
+## Progress
+## Note:
+Within the next couple of months after the initial prototype, we were able to take the prototype to all the key stakeholders, the magistrate, the registry staff and some lawyers to start the discussion of how we could get this idea off the ground. And get the ball rolling for a real working solution.
+
+One of the challenges in progressing the idea was getting all the key stakeholders togethor for regular feedback on progress and to help us overcame both the legal and technical challenges.
+
+So we set aside fortnightly progress meetings, initially for the director, the magistrate and key legal staff, but it has also grown to include Police prosecutors and the registry staff.
+
+Each progress meeting allows all the stakeholders to review progress that has been made in the last fortnight, plan changes for the next fortnight and raise any concerns might have arisen. In between the progress meetings, we have been using a Trello board to manage tasks, communicate changes ask for help and document anything that happens. Why trello? simply because it was one of the few tools we could all access from within the department of justice network and the barrier of entry and onboarding for non-technical staff is very low.....its also free :D
+
+For anyone familiar with the buzzwords lean, agile and kanban, this will probably all sound familiar.
+
+
+## Progress
+![Online pleas trello board](./images/online-pleas-trello-board.png)
+
+
+## Progress
+<img src="./images/online-pleas-1.png" height="500px" />
+
+
+## Progress
+<img src="./images/online-pleas-2.png" height="500px" />
+
+
+## Yay
+![high five cat](./images/high-five-cat.gif)
+
+
+## Whats next?
+## Note:
+* This has not only helped us get traction for the idea, and drive buy-in and interest within the centre, it has also provided us opportunity to fail early by making assumptions where we didnt need too much detail and deferring until more information was on hand
+* The POP prototype also gave us a fun, low tech option to really showcase the solution we had envisaged, get a wider range of stakeholders into the conversation early on and we did not have to rely on just how well we could describe it people.
+* Testing testing and testing, we hope to soon start testing with clients in different scenarios, targeting candidate cases and providing online as an option for clients. We will also be including a 1 page flyer in the summons pack that is sent for candidate cases:
+* We need to refine some of the information that is collected to ensure:
+  - it is useful enough for the magistrate to make a clear decision
+  - it is easy and painless for users
+  - doesnt cause an extra burden on the court registry
+
+
+
 ## Some things I've learnt
 * What are we testing?
 * Aim for the lowest fidelity you NEED
 * Show tangible progress
 * Find your internal champions
+* Have fun - prototype with people
 
 ## Note:
 So in summary, these are some general things i've learnt about or had reinforced to me during my time as a fellow, working on problems like the ones I have just gone over.
@@ -162,11 +243,9 @@ Most importantly, you need to find your internal champions, these are the people
 
 
 
-## Tools i've found useful
-
-
-
 ## One more thing...
 We are hiring!
+
 ![Hiring](./images/hiring.gif)
+
 Info on [codeforaustralia.org](http://codeforaustralia.org)
