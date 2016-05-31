@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Why I Node</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<!--<link rel="stylesheet" href="css/theme/simple.css" id="theme">-->
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style media="screen">
+			html body .reveal div.speaker-notes.visible {max-height:50%;}
+			html body .reveal section img{border:none;}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Why I Node</h1>
+          <h3>From n00b to.... less-n00b</h3>
+					<footer>
+						<small>31 May, 2016</small>
+					</footer>
+
+					<aside class="notes">
+						<p>Just going to talk a bit about my work for Code for Australia and why I've been using nodejs + stuff for newbz</p>
+					</aside>
+				</section>
+
+        <section data-markdown="./markdown-content/why-i-node.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+                 data-separator-notes="^## Note:"
+                 data-charset="iso-8859-15">
+        </section>
+
+				<section style="text-align: left;">
+					<h1>That's all folks</h1>
+					<ul>
+            <li>Follow me <strong>@theatlasroom</strong></li>
+            <li>Follow NJC <strong>@NJC_Collingwood</strong></li>
+						<li>Follow <strong>@codeforaus</strong></li>
+						<!--<li>Get involved in Code for Australia!</li>
+						<li><a href="https://github.com/hakimel/reveal.js">Presentation made with reveal.js</a> - try it online for free</li>-->
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				showNotes: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
