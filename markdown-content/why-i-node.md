@@ -105,6 +105,7 @@ For me, some of the attraction to NodeJS was:
 * Callbacks, Promises
 * Buffers and Streams
 * fs, http, EventEmitters
+* [Error handling](https://www.joyent.com/developers/node/design/errors)
 
 ## Note:
 So while node offers a lot of nice things out of the box, there are still a few hurdles you'll probably come across when you're diving in. But if you take some time to invest in learning a few key concepts, the rest will come. If you already understand javascript syntax, I recommend looking particularily at:
