@@ -19,88 +19,58 @@ What I wanted to understand from this was:
 - their pain points - this included the pain points that I observed, processes I noticed could be improved by some simple technology and issues staff were telling me about
 - previous solutions and upcoming projects - what were some of the solutions that had been previously tried to alleviate some of the pain points, I didnt want to recreate solutions that had already been tried and tested.
 
-### Research outputs
-THIS SHOULD ALL BE IN A SINGLE DRIVE FOLDER
-* [Draft plan](https://docs.google.com/a/codeforaustralia.org/document/d/1P_RL06H0FK-DSSnlRjlFwCoUDheLsRlkTo4IQcy_Yuw/edit?usp=drive_web)
-* [Possible questions](https://docs.google.com/a/codeforaustralia.org/document/d/1ZNwN5d7I5YODZn-roO8UyTWh7uK_YU4aAlQ17S3033Y/edit?usp=drive_web)
-* [Trello - Shadowing Tasks](https://trello.com/b/JQkz4SSo/tasks)
-* [Trello - Ideas](https://trello.com/b/rqGrXZI8/ideas)
-* [Trello - Context/Tools/Data](https://trello.com/b/iJQVp70E/context-data-locale-software-skills)
-* [Possible problems](https://docs.google.com/document/d/1K-nJ_UJ8YjQeK-etNyQqE7aUMF3-wO6b2XAS-PLz4MY/edit)
-* [Workshop plan - Oct 27](https://docs.google.com/document/d/1GVY_11MLdnIImb4xaVj1pCfcSnyGIhNPRicqkRgJAnM/edit)
-* [Problem list - Workshop Oct, 27](https://docs.google.com/a/codeforaustralia.org/document/d/1ei3nhEUEDj4k-WtX5gTj3YNGtrXzSNulDdSV5334toY/edit?usp=drive_web)
-* [Solutions list - Workshop with Client services Dec, 1](https://docs.google.com/document/d/1m9j1RvoM6uUL240SAy8ZJxCVToBS1tU5zeEmYHhzRmk/edit)
-* Link to research report
-* Link to public blog posts
+## Prototyping activities
+After the research stage, we had a range of pain points of that were ready for further exploration. Solutions were then prototyped at different levels to allow us to start exploring the soundness of the solution, complexiity of implementing the solution and any areas that would require further research to properly define the problem to be tackled.
 
-## Prototypes
-After the research stage, we had a range of pain points of various sizes that were ready for further exploration. Solutions were then prototyped at different levels to allow us to start exploring:
-- Soundness of the solution
-- Complexiity of implementing the solution
--
-
-
-### Electronic access to documents
+### Electronic access to documents (Prototype)
 Digitising and providing the option of online access to family violence and personal safety orders, and other court documents to NJC clients.
 * Clients are given a paper copy of their court documents (in person or via mail)
 * The NJC would like to give clients the option of online access to their documents to be able to access them at any time such as when an incident occurs and you need to convey the terms of your order to the police.
 * Focusing on Family violence intervention and Personal safety orders (FVIO/PSO)
 
-Created a mobile [responsive prototype](http://njc-efv.herokuapp.com)
+We created a mobile [responsive prototype](http://njc-efv.herokuapp.com) to illustrate how this might work and fit within the NJCs broader project on a online family violence intervention order. This prototype was well received and will be rolled out into a future project.
 
-### Calendar of appointments
-Providing online access to a list of your upcoming appointments (with social workers) at the NJC and for court dates. Clients turn up for appointments, sometimes they don't have an appointment scheduled, the details have changed or they have the wrong date, the information team usually are the first contact and must call / email / search around to verify the meeting. Clients check in with the court registry when they arrive for their court date, social workers routinely check with the registry to see who has attended for the day.
+### Staff in / out (Mockups / prototype)
+Staff send emails around each day to notify each other of changes in their work schedule (leaving early, going home sick, working from home), additionally a duty worker is assigned each day to provide frontline assessment of clients, this information is sent around by the staff member assigned to the role. to reduce the number of these emails being sent and keep an  eye on who is around, who is out and who might be on leave. Being the first contact for the any visitor to the centre, the information team are often tasked with tracking down the relevant staff members.
 
-* Provide a calendar of appointments for the information team to verify clients have an appointment with person X
+A session was
+
+
+### Calendar of appointments (Mockups / additional research)
+We saw a good opportunity for providing online access to a list of upcoming appointments, both for NJC clients and staff. Clients turn up for appointments, sometimes they don't have an appointment scheduled, the details have changed or they have the wrong date, the information team usually are the first contact and must call / email / search around to verify the meeting. Clients check in with the court registry when they arrive for their court date, social workers routinely check with the registry to see who has attended for the day.
+
+* Provide a calendar of appointments for the information team to verify clients have an appointment with a staff member
 * Access to the details of upcoming appointments and court dates
-* Clients check-in when they arrive at the NJC - allow social workers to see who has attended, clients have a record that they attended
+* Clients check-in when they arrive at the NJC - allow client services staff to see who has attended
+* Clients have a record that they attended
 * Ability to reschedule appointments if you need to
-* New appointment requests sent to your account and you can accept / propose a new time
+* New appointment requests sent to clients with and option to accept / propose a new time that might be more appropriate
 
-Mockups produced:
-* Mocking [interface for clients](https://app.moqups.com/ekigbo/ShWGM4yt7q/view/page/a0056ded4)
-* [Mocking interface](https://app.moqups.com/ekigbo/ShWGM4yt7q/view/page/a298c2517) for list of appointments, who has attended and creating a new appointment
+Mockups and a process map were produced after some additional user interviews to better understand how this solution might look and how it could be integrated into the work the NJC staff.
 
-I recommend keeping an eye on the work being done by DTO on an [appointment booking tool for citizenship](https://github.com/AusDTO/citizenship-appointment-client).
+Additionally it would be useful to keep an eye on the work being done by DTO on an [appointment booking tool for citizenship](https://github.com/AusDTO/citizenship-appointment-client).
 
-### In / Out board
-Staff send emails around each day to notify each other of changes in their work schedule (leaving early, going home sick, working from home), there is also a duty worker assigned each day. This is also sent around as an email. The information team have been trialling [inoutboard](https://www.inoutboard.com/) to reduce the number of these emails being sent and keep an eye on who is around, who is out and who might be on leave.
+### NJC Website (Additional research)
+The NJC had begun exploring what a new website might look like for them, so we spent some time conducting some additional research to help prepare for this project. Some preliminary work had been conducted on a possible Information Architecture, so we decided to explore what it might mean to try and test that with a wider audience.
 
-#### Status: Early progress
-* Ran a session with client services staff to understand why they werent using in/out board + what could improve it
-* Mocking a possible alternative to test
-  - [See who is in / out](https://app.moqups.com/ekigbo/5ZBPPdq0mn/edit/page/ae4e92ceb)
-  - [Update my in / out](https://app.moqups.com/ekigbo/5ZBPPdq0mn/edit/page/a6650e232)
-  - [Set up a schedule for my regular hours](https://app.moqups.com/ekigbo/5ZBPPdq0mn/edit/page/acb56e560)
-  - Integrate into the [NJC Intranet](#njc-intranet)
+We held a workshop at the [2016 Pausefest](www.codeforaustralia.org/blog/pausefest-2016-re-building-a-government-website) conference with participants so we could try to possibly:
 
-### NJC Website
-The NJC are rebuilding their website, we are hoping to tie in some community engagement activities into the process to show how you can involve your clients and community in government projects.
+* Identify some areas that might be missing from the current website and IA
+* Generate a possible IA from the NJCs current content
+* Protosketch ideal solutions for a NJC service or a new website
 
-More user research required
+The results of this session along with an internal session held with staff for the same IA and a deeper look at some analytics data provided some new perspectives and possible ideas for the new NJC website which will be continued by the NJC.
 
-#### Status: Early progress
-* [Pausefest session](/docs/pausefest-session) on card sorting current NJC website content
-
-### NJC Map
-The NJC want to show how community justice can work, and the work that has been done in the City of Yarra. The focus will be on the partnerships between different social agencies and how they collaborate.
+### NJC Map (Mockups)
+The NJC were interested in finding ways to visualise how community justice can work, in particular what has worked within the City of Yarra, focusing on the partnerships between the different service providers in the community and how they have collaborated around challenges in the community.
 
 Further validation of the idea required
 
-#### Status: Early progress
 * [Mocked prototype](https://app.moqups.com/ekigbo/5ZBPPdq0mn/view/page/a1c9a6a86)
 * Next steps:
   - Gather sample data
   - Produce working demo - demo around to get other agencies on board to contribute data
 
-## Events
-* Links to slides and presentations
-* Observations Session
-* Workshop with staff??
-* Card Sorting - website
-* Pausefest
-* Prototype feedback
-* Hackathons - govjam, red cross, budgethack
 
 ## Recommendations
 ### Online Pleas
@@ -134,5 +104,3 @@ One of the clear challenges for any government organisation taking on year long 
 
 ## Thanks
 Special thanks to the following people: Kerry Walker, Gavin Hince, Louise Bassett, Anthony Ket, Cameron Wallace, Pene Knight, Diane Arsic, Damian James, Ann Strunks, Jo Szczpanska, Vanessa Toholka, Andy Johnston, Jacob Lindsay, Alvaro Maz, Dan Groch, Bluebird Espresso, Everyday Coffee and all the other amazing baristas that kept me caffeinated along the way.
-
-## Useful links
