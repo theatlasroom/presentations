@@ -136,6 +136,7 @@ const appRender = (location, plainPartialState, routerContext = {}) => {
 						</ul>
 						<aside class="notes">
 							<p>There isn't too much needed for routing, we just need to ensure we handle routes on both the client and server, using the relevant router</p>
+							<p>We define our routes in a seperate file and can access those routes in our express router and in react-router on the front end</p>
 							<p>I didnt look too far under the hood</p>
 						</aside>
 					</section>
@@ -267,21 +268,54 @@ export default ArtistPage
 				<section>
 					<section>
 						<h2>Styling</h2>
-						<p>Problem: the server does not understand CSS</p>
+						<p>😅</p>
 						<ul>
-							<li>Conditional styling</li>
 							<li>Inline Styles</li>
-							<li>CSS Modules</li>
+							<li>Isomorphic style loader - extracts critical styles needed for rendering from the server</li>
+							<li>CSS Modules - modular approach that creates globally unique styles</li>
+							<ul>
+								<li>Conditional styling?</li>
+								<li>css-modules-require-hook</li>
+							</ul>
+							<li>JSS - styles written in JS, that are injected into your app</li>
+							<ul>
+								<li>🤢</li>
+							</ul>
 						</ul>
 						<aside class="notes">
-							<p>The challenge is how to apply styles on the server?</p>
-							<p>I wanted to use CSS modules</p>
-							<p>css-modules-require-hook</p>
+							<p>The challenge is how to apply styles to components coming from the server?</p>
+							<p>This isnt really a isomorphic react problem, more of a react community problem, nonetheless some options work better on the server</p>
 						</aside>
 					</section>
 
 					<section>
-						<h2>Conditional styling</h2>
+						<h2>CSS modules</h2>
+<pre>
+	<code data-noescape>
+import React from 'react'
+<mark>import styles from './ComponentStyles.css'</mark>
+export default class StyledComponent extends React.Component {
+...
+  render() {
+    return (
+      &lt;header&gt;
+        &lt;h1 className={styles.someStyle}&gt;🤙🏾🔥Yeaaaaah boiiiii&lt;/h1&gt;
+      &lt;/header&gt;
+    )
+  }
+}
+	</code>
+</pre>
+
+						<aside class="notes">
+							<p>Typically css modules look something like this</p>
+							<p>That line is the problem, node on its own doesnt know how to handle CSS files</p>
+							<p>One option is to use a seperate webpack config for your server code, helpers such as universal-webpack make this easier</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>CSS Modules - Conditional styling</h2>
 						<pre>
 							<code>
 if ( process.env.BROWSER ) {
@@ -297,34 +331,41 @@ export default class SomeComponent extends React.Component {
 }
 							</code>
 						</pre>
-						<p>WithStyle</p>
+						<aside class="notes">
+							<p>Another option is conditional styling, in this, we set up an env variable that can be checked, and choose whether or not to include styles</p>
+							<p>This also requires some additional configuration to your webpack file</p>
+							<p>A nicer approach is to use a higher order component such as withStyles to achieve this and just wrap your components in that</p>
+						</aside>
 					</section>
 
 					<section>
-						<h2>Other options</h2>
-						<ul>
-							<li>[Isomorphic style loader](https://github.com/kriasoft/isomorphic-style-loader) - Loader that helps to renders only the required styles during SSR</li>
-							<li>[babel-plugin-transform-require-ignore](https://www.npmjs.com/package/babel-plugin-transform-require-ignore) - ignore specific file extensions</li>
-						</ul>
+						<h2>CSS Modules require hook</h2>
+<code>
+	<pre>
+const hook = require('css-modules-require-hook');
+hook({
+  generateScopedName: '[name]_[local]__[hash:base64:5]',
+  rootDir: projectDir
+});
+	</pre>
+</code>
 					</section>
-				</section>
-
-
-				<section>
-					<h2>Regrets</h2>
-					<ul>
-						<li>The common</li>
-					</ul>
+					<aside class="notes">
+						<p>This seemed the simplest approach</p>
+						<p>Add it in and it extends the functionality of require statements to handle CSS files</p>
+						<p>Combining css modules with the ExtractTextWebpackPlugin, we can extract all our styles into a css file which we reference from our server view</p>
+					</aside>
 				</section>
 
 				<section>
 					<h2>Reality...</h2>
 					<ul>
-						<li>[Universal redux](https://github.com/bdefore/universal-redux)</li>
-						<li>[Isomorphic.net](http://isomorphic.net/)</li>
-						<li>[Airbnb - isomorphic javascript](https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc)
+						<li>Universal redux</li>
+						<li>Isomorphic.net - resources on isomorphic apps</li>
+						<li>Airbnb - isomorphic javascript overview - https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc</li>
 					</ul>
 					<aside class="notes">
+						<p>It's not too hard to get this working, but it does require a few choices along the way and a bit of fiddling around</p>
 						<p>If you just want to get something working, use a starter kit, adopt inline styles.</p>
 					</aside>
 				</section>
