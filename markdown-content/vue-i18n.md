@@ -16,19 +16,19 @@
 
 - Hi I'm Ezekiel, I currently work as a FE engineer at GitLab and have been there for ~6months
 - I obviously love programming, also making music 🎵 playing football ⚽ and learning about langauges, different cultures and history
-- Prior to joining GitLab I hadnt spent much time with vue prior to that, I've previously worked with React and the good angular (1.5)
+- Prior to joining GitLab I mostly worked with React and before that angular 1.5, you know, the good one
 - But I've enjoyed the transistion to vue because of its flexibility, its not overly complex and there's a wide range of libraries available to help
 
 <!-- Slide -->
 
 ### GitLab
 
-- Single application for software development, incl: Source code management, project managment, CI, CD, Security (SAST and DAST) and metrics on your running applications
+- Single application for software development, incl: Source code management, project management, CI, CD, Security (SAST and DAST) and metrics on your running applications
 
 <!-- Notes -->
 
 - So the short summary if you havent come across GitLab, we are building a single application for the entire software development lifecycle.
-  - What does that mean? Well it means we have solutions for source code managment, code review, project management, CI, package management
+  - What does that mean? Well it means we have solutions for source code management, code review, project management, CI, package management
   - Additionally we have both a SAAS offering or you can run our tools on your infrastructure
 - Currently and for the foreseeable future, our FE stack is in a period of transition
 
@@ -39,7 +39,7 @@
 
 ![Remote company](./images/vue-i18n/remote.png) <!-- .element height="67.5%" width="67.5%" -->
 
-- 100% Remote, thats correct! REMOTE!
+- 100% Remote, that's correct! REMOTE!
 - We work in the open
 - ~750 staff across 55 countries
 
@@ -70,6 +70,7 @@
 <!-- Notes -->
 
 - GL socks
+- You'll often see gitlabbers out in the wild in different shades of purple and orange
 
 <!-- Slide -->
 
@@ -85,10 +86,6 @@
 - I'll be talking about internationalization (aka i18n) tonight, because i think its an area that's rarely touched on and quite possibly easily skipped in a lot of products, which is a shame since theres some really useful tooling around to support i18n efforts.
 - While i'll talk broadly about a few topics, i'll be mostly focussing on one aspect of i18n which is translation
 - I didnt want to only talk about vue-i18n, instead i thought it might be good to dive a little deeper and talk about some of what libraries like vue-i18n help you achieve and why they are so useful. So this wont be a strictly vue talk and that will make sense why, but ill definately touch on some of the tools available in the vue world
-- So i'll cover a few topics
-  - What is i18n & l10n
-  - A particular aspect of i18n and l10n, tranlsation
-  - and look at some Tools available for vue
 - Hopefully by the end, you'll have some intuition about i18n and l10n
 
 <!-- Slide -->
@@ -177,7 +174,8 @@ __("Hello people!");
 <!-- Notes -->
 
 - Once you've marked all your strings, you will need to create a dictionary of strings, this is used to generate the translation files for the languages you want to support
-  - This is an example of a json format dictionary
+  - You will usually execute an externalization function to extract all your `gettext` marked strings
+- This is an example of a json format dictionary
 
 <!-- Slide -->
 
@@ -202,12 +200,13 @@ msgstr[1] ""
 <!-- Notes -->
 
 - One of the other common formats is the .pot file, or .po template
+- The .pot template shows the relevant string keys and also gives information on the type of pluralization rules supported
 - Ensuring all your strings are up to date is one of the challenges
   - At gitlab we have some tools to help with this
   - We have some rules in our CI pipelines to detect marked strings that arent in the .pot
   - But with the added challenge that we have strings in numerous places, ruby files, haml templates, js, vue files and need to ensure these are always marked for translation
   - Something my team has been working on recently was some various linting tools to assist with identifying translatable strings in our codebase
-  - Specifically i worked on one for .vue files, diving into the <template>, ill demo this later
+  - Specifically i worked on one for .vue files, to detect strings that should be marked
 
 <!-- Slide -->
 
@@ -225,10 +224,10 @@ msgstr[1] ""
 msgid "Please sign in."
 msgstr "Bitte melde dich an."
 
-msgid "%d Katze,"
-msgid_plural "%d Katzen,"
-msgstr[0] ""
-msgstr[1] ""
+msgid "%d cat,"
+msgid_plural "%d cats,"
+msgstr[0] "%d Katze,"
+msgstr[1] "%d Katzen,"
 ```
 
 <!-- Notes -->
@@ -257,6 +256,8 @@ msgstr[1] ""
 <!-- Notes -->
 
 - In the vue world, we have a useful plugin, called, surprise surprise vue-i18n
+- You can install this plugin and be off to a great start
+- Additionally we also have `eslint-plugin-vue-i18n` which provides some extra eslint rules to help with i18n such as checking for unused keys, or keys missing from your message files. It also looks like they recently added support for bare string detection, warning when you have strings that should be marked for translation.
 
 <!-- Slide -->
 
@@ -348,92 +349,6 @@ console.log('l' + 'ocalizatio'.length + 'n')
 - i18n and l10n arent as big and scary as you might think
 - There are a few steps involved in the process but also lots of tools available so id suggest consider baking it in as early as possible to your product or website if you would like to reach a wider audience
 - I'll be sticking around so feel free to ask me any questions about i18n, GitLab, working remotely or whatever else
-
-### Ideas
-
-- What i'll talk about + me
-
-  - Just want to give a brief overview on internationalization, why its important and how to get started in your vue apps
-  - I feel like this something that's often overlooked
-
-  <!-- - I started SoftEng at Newcastle and switched to comp sci because it's a year shorter and I could skip the final year project (Trollface) - not even kidding
-  - My first role after uni had communication in it which ironically was a poor communication of the role when I wanted to move on. -->
-
-  - I used to call myself a full stack engineer,
-  - Then started calling myself a front end developer
-  - Then somewhere along the line I gave up and I just settle for what's currently on my twitter. - I'm not trying to be obtuse, but i just find these arbitrary labels a bit weird /rant.
-  - So I'm currently a frontend engineer at gitlab 🤷‍♂️
-  - What does FE look like?
-
-    - all the things
-
-      - rails: we go it
-      - haml: we got it
-      - es6: we got it
-      - vuejs: we got
-      - did you say jquery? yeah we got it
-
-    - what does my day look like
-
-      - 45% failed pipelines
-      - 35% rspec tests
-      - 10% js
-      - 5% coffee related things
-      - 5% laughing at markdalgleish's memes
-
-- What is i18n
-
-  - overview
-  - Why i18n is important
-    - Broader audience for your users, allowing users to use your tools and products in the language they are most comfortable with
-    - Relatively easy to bolt-on to existing apps
-  - general steps involved
-    - High level, you create a dictionary of strings and reference the strings from the relevant language file in your app
-    - Markup all strings in your code base
-      - These will be used as keys mapped to a translation file
-    - Generate translation file or template
-      - Translate your strings based on the keys (lots of third party services for this)
-    - Detect the user's language preference
-    - Load the appropriate translation file for their language
-  - Challenges / Considerations
-    - Interpolation
-      - v-html
-      - escaping / xss
-    - Pluralization
-    - UI / design
-      - For example: English strings will likely be a lot shorter than their international equivalents, so you need to leave some space in your UI to allow for this. This can break your UI if you're design for specific widths / sizes
-
-- How do we do this at GL?
-
-  - Why we needed to automate this
-    - We have strings in various places of the codebase: ruby, haml, js, vue
-  - Focus on externalization
-    - Generate the AST
-    - Look for valid string nodes
-    - Autofix easy ones, warn tricky ones
-  - Maybe do some rough stats on GL commits + vue files etc to illustrate scale
-
-- How can you do this in your vue app
-
-  - Show example app? - codesandbox?
-  - vue-i18n
-
-    - features
-      - available rules
-      - namespaces
-      - pluralization
-      - interpolation
-    - config?
-      - json format?
-    - eslint-vue-i18n??
-
-  - locale detection
-  - language switcher
-  - i18n plugin to get users language from browser?
-  - vue-i18n:
-  - playground?
-
-### TODO build a slides webapp + i18n?
 
 ### Links
 
