@@ -10,7 +10,7 @@
 
 - I'm Ezekiel
 - FE @ GitLab
-- New(ish) to vue
+- New(ish) to Vue
 
 <!-- Notes -->
 
@@ -76,7 +76,7 @@
 ### Overview
 
 - What is internationalization (i18n)?
-- Locallization (l10n)
+- Localization (l10n)
 - Translation
 - Vue-i18n
 
@@ -104,7 +104,7 @@
     - Ensuring designs have enough space to accommodate strings in other languages / character sets
       - For example: Quite often English strings end up shorter than their international equivalents, so you need to ensure your UI can grow to accommodate additional characters. This can break your UI if you're design for specific widths / sizes
     - Developing custom layouts for right to left text
-    - Ensuring strings in your program are easily translateable to other languages
+    - Ensuring strings in your program are easily translatable to other languages
 
 <!-- Slide -->
 
@@ -128,7 +128,7 @@
 
 ### Translation
 
-- Mark translateable strings
+- Mark translatable strings
 - Create a translation file for each language
 - Translate the strings (duh)
 - Detect your user's language preference and load the relevant translation file
@@ -137,7 +137,7 @@
 
 In general, there are a few steps involved in translating,
 
-- Mark translateable strings
+- Mark translatable strings
 - Create a translation file for each language
 - Translate the strings (duh)
 - Detect your user's language preference and load the relevant translation file
@@ -151,7 +151,7 @@ gettext("This is an awesome text string that should be translated");
 ```
 
 ```javascript
-__("This is a convention for translateable text");
+__("This is a convention for translatable text");
 __("Hello people!");
 ```
 
@@ -206,7 +206,7 @@ msgstr[1] ""
   - At gitlab we have some tools to help with this
   - We have some rules in our CI pipelines to detect marked strings that arent in the .pot
   - But with the added challenge that we have strings in numerous places, ruby files, haml templates, js, vue files and need to ensure these are always marked for translation
-  - Something my team has been working on recently was some various linting tools to assist with identifying translateable strings in our codebase
+  - Something my team has been working on recently was some various linting tools to assist with identifying translatable strings in our codebase
   - Specifically i worked on one for .vue files, diving into the <template>, ill demo this later
 
 <!-- Slide -->
@@ -248,9 +248,9 @@ msgstr[1] ""
 
 <!-- Slide -->
 
-### What about vue - Step 1
+### What about vue? - Step 1
 
-> npm install vue-i18n
+> npm install vue-i18n --save
 
 ![Coffee time](./images/vue-i18n/goals.gif)
 
@@ -297,13 +297,13 @@ const messages = {
 
 <!-- Slide -->
 
-### What about vue - Step 2:
+### What about vue? - Step 2:
 
 ![Coffee time](./images/vue-i18n/coffee-time.gif)
 
 <!-- Slide -->
 
-### But wait, theres more
+### But wait... there's more
 
 ![But wait, theres more](./images/vue-i18n/theres-more.gif)
 
@@ -321,6 +321,8 @@ Locale setting, Pluralization, Interpolation & Lazy loading translations
 
 ### Example project
 
+https://gitlab.com/ekigbo/say-hello
+
 <!-- Notes -->
 
 - Demo of vue-i18n
@@ -331,12 +333,20 @@ Locale setting, Pluralization, Interpolation & Lazy loading translations
 
 ### Final takeaways
 
+```javascript
+console.log('i' + 'nternationalizatio'.length + 'n')
+=> i18n
+
+console.log('l' + 'ocalizatio'.length + 'n')
+=> l10n
+```
+
+> Follow me <strong>@theatlasroom</strong>
+
 <!-- Notes -->
 
 - i18n and l10n arent as big and scary as you might think
 - There are a few steps involved in the process but also lots of tools available so id suggest consider baking it in as early as possible to your product or website if you would like to reach a wider audience
-- Why is it called i18n? - 18 characters between the i and the n in internationalization :)
-- Why is it called i10n? - 10 characters between the l and the n in localization :)
 - I'll be sticking around so feel free to ask me any questions about i18n, GitLab, working remotely or whatever else
 
 ### Ideas
