@@ -17,7 +17,7 @@
 - Hi I'm Ezekiel, I currently work as a FE engineer at GitLab and have been there for ~6months
 - I obviously love programming, also making music 🎵 playing football ⚽ and learning about langauges, different cultures and history
 - Prior to joining GitLab I mostly worked with React and before that angular 1.5, you know, the good one
-- But I've enjoyed the transistion to vue because of its flexibility, its not overly complex and there's a wide range of libraries available to help
+- But I've enjoyed the transistion to vue because of its flexibility,its not overly complex and the great community and wide range of libraries and resources available to help
 
 <!-- Slide -->
 
