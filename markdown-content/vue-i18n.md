@@ -352,16 +352,13 @@ console.log('l' + 'ocalizatio'.length + 'n')
 
 ### Links
 
+- [vue-i18n](https://github.com/kazupon/vue-i18n)
+- [Internationalization at GitLab](https://docs.gitlab.com/ee/development/i18n/externalization.html)
+- [gettext plural forms](https://www.gnu.org/software/gettext/manual/html_node/Translating-plural-forms.html)
 - [eslint plugin vue i18n](https://github.com/kazupon/eslint-plugin-vue-i18n)
 - [GL: eslint plugin vue i18n](https://gitlab.com/ekigbo/eslint-plugin-vue-i18n)
 - [mdn - gettext](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/gettext)
-- [Internationalization at GitLab](https://docs.gitlab.com/ee/development/i18n/externalization.html)
-- [gettext plural forms](https://www.gnu.org/software/gettext/manual/html_node/Translating-plural-forms.html)
 - [Transifex](https://www.transifex.com/)?
 - [i18next](https://www.i18next.com/)
-- [vue-i18next]()
-- [vue-i18n]()
-- [vue-i18n-starter](https://github.com/dobromir-hristov/vue-i18n-starter)
-- [W3c - Text size in translation](https://www.w3.org/International/articles/article-text-size)
-- [Wikipedia - Internationalization / Localization](https://en.wikipedia.org/wiki/Internationalization_and_localization)
+- [W3C - Text size in translation](https://www.w3.org/International/articles/article-text-size)
 - [localeplanet](http://www.localeplanet.com/)

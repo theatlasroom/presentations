@@ -1,115 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-	<head>
-		<meta charset="utf-8">
+    <title>Prototyping public services</title>
 
-		<title>Prototyping public services</title>
+    <meta name="description" content="Prototyping public services" />
+    <meta name="author" content="Ezekiel Kigbo" />
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme" />
+    <!--<link rel="stylesheet" href="css/theme/simple.css" id="theme">-->
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
-		<!--<link rel="stylesheet" href="css/theme/simple.css" id="theme">-->
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <style media="screen">
+      html body .reveal div.speaker-notes.visible {
+        max-height: 50%;
+      }
+      html body .reveal section img {
+        border: none;
+      }
+    </style>
 
-		<style media="screen">
-			html body .reveal div.speaker-notes.visible {max-height:50%;}
-			html body .reveal section img{border:none;}
-		</style>
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Prototyping public services</h1>
+          <h3>Lessons learned</h3>
+          <footer>
+            <small>20 April, 2016</small>
+          </footer>
 
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Prototyping public services</h1>
-					<h3>Lessons learned</h3>
-					<footer>
-						<small>20 April, 2016</small>
-					</footer>
-
-					<aside class="notes">
-						<p>
-							Hey today, im here to talk a bit about prototyping, innovation, lean-ish practice and all those other interesting topics, and how they can be applied....
-						</p>
-					</aside>
-				</section>
-
-        <section data-markdown="./markdown-content/connect-expo.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^## Note:"
-                 data-charset="iso-8859-15">
+          <aside class="notes">
+            <p>
+              Hey today, im here to talk a bit about prototyping, innovation,
+              lean-ish practice and all those other interesting topics, and how
+              they can be applied....
+            </p>
+          </aside>
         </section>
 
-				<section style="text-align: left;">
-					<h1>That's all folks</h1>
-					<ul>
+        <section
+          data-markdown="./markdown-content/connect-expo.md"
+          data-separator="^\n\n\n"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^## Note:"
+          data-charset="iso-8859-15"
+        ></section>
+
+        <section style="text-align: left;">
+          <h1>That's all folks</h1>
+          <ul>
             <li>Follow me @theatlasroom</li>
             <li>Follow NJC @NJC_Collingwood</li>
-						<li>Follow @codeforaus</li>
-						<!--<li>Get involved in Code for Australia!</li>
+            <li>Follow @codeforaus</li>
+            <!--<li>Get involved in Code for Australia!</li>
 						<li><a href="https://github.com/hakimel/reveal.js">Presentation made with reveal.js</a> - try it online for free</li>-->
-					</ul>
-				</section>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-			</div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		</div>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        showNotes: false,
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        transition: "slide", // none/fade/slide/convex/concave/zoom
 
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				showNotes: false,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
+        // Optional reveal.js plugins
+        dependencies: [
+          {
+            src: "lib/js/classList.js",
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: "plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            condition: function() {
+              return !!document.querySelector("pre code");
+            },
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
